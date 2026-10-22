@@ -71,14 +71,6 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-b
 import json
 
 def load_json_file(file_path):
-  """Loads a JSON file and returns its content as a Python dictionary.
-
-  Args:
-    file_path: The path to the JSON file.
-
-  Returns:
-    A Python dictionary representing the JSON data, or None if an error occurs.
-  """
   try:
     with open(file_path, 'r') as f:
       data = json.load(f)
@@ -106,8 +98,6 @@ from langchain.docstore.document import Document
 texts = [Document(page_content=d) for d in document]
 
 texts = list(map(lambda x: x.page_content.replace("\n", " "), texts))
-
-"""**Creating Vector Index:** A vector index is created from the texts using Chroma and embeddings."""
 
 vector_index = Chroma.from_texts(texts, embeddings).as_retriever(search_kwargs={"k":5})
 
