@@ -1,6 +1,6 @@
 # FOOD-FAB-SEARCH
 
-## 📌 Project Overview
+##  Project Overview
 
 The **AI-Powered Food Menu Assistant** is a Retrieval-Augmented Generation (RAG) application that answers natural language questions about food items available in a menu stored in JSON format.
 
@@ -8,7 +8,7 @@ The application uses **LangChain** to process user queries, **Google Gemini** to
 
 Users can ask questions such as *"Give me a variety of Jain thali food"* and receive helpful answers based on the information available in the menu dataset.
 
-## 🎯 Objectives
+## Objectives
 
 - Build an AI-powered question-answering system for food menus.
 - Process and split structured JSON menu data into manageable chunks.
@@ -17,7 +17,7 @@ Users can ask questions such as *"Give me a variety of Jain thali food"* and rec
 - Generate context-aware responses using Google Gemini.
 - Provide accurate answers grounded in the supplied menu data.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -30,7 +30,7 @@ Users can ask questions such as *"Give me a variety of Jain thali food"* and rec
 | RecursiveJsonSplitter | Splitting structured JSON data |
 | Google Colab | Development and execution environment |
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The application follows a Retrieval-Augmented Generation workflow:
 
@@ -70,7 +70,7 @@ Google Gemini + LangChain
 Context-Aware Answer
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 AI-Food-Menu-Assistant/
@@ -86,7 +86,7 @@ AI-Food-Menu-Assistant/
 - `requirements.txt`: Lists the required Python dependencies.
 - `README.md`: Project documentation.
 
-## ⚙️ Installation and Setup
+##  Installation and Setup
 
 ### Step 1: Clone the Repository
 
@@ -152,7 +152,7 @@ Execute the notebook cells in order to:
 5. Initialize the LangChain RetrievalQA chain.
 6. Submit a question and display the response.
 
-## 💡 Example Usage
+##  Example Usage
 
 Example query:
 
@@ -168,7 +168,7 @@ The system retrieves relevant menu information and generates an answer using the
 
 **Note:** The actual response depends on the contents of the JSON dataset. The application should not be expected to recommend menu items that are absent from the retrieved information.
 
-## 🔍 Key Features
+##  Key Features
 
 - **Natural Language Queries:** Ask food-related questions in everyday language.
 - **Semantic Search:** Retrieve relevant menu information based on meaning rather than exact keyword matches.
@@ -178,14 +178,14 @@ The system retrieves relevant menu information and generates an answer using the
 - **Source Document Retrieval:** Return source documents alongside the generated answer for further inspection.
 - **Modular Architecture:** Extend the application to support additional menus and food-related use cases.
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 - Keep Google Gemini API keys private.
 - Never upload API keys or other secrets to a public repository.
 - Use environment variables or Colab Secrets to manage credentials.
 - Check API usage limits and billing requirements before deploying the application.
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - Build an interactive web interface using Streamlit.
 - Add filters for Jain, vegetarian, vegan, and other dietary preferences.
@@ -196,7 +196,7 @@ The system retrieves relevant menu information and generates an answer using the
 - Implement chat history for multi-turn conversations.
 - Add automated tests for retrieval quality and answer accuracy.
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates practical implementation of:
 
